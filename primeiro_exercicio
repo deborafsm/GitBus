@@ -1,0 +1,17 @@
+nome= "Drizzt"
+sobrenome= "d Urden"
+idade= 87
+raca = "drow"
+classe = "ranger"
+dano = 8000
+forte = dano >= 3000
+
+
+
+print("LENDAS")
+print('Nome: ',nome)
+print('Sobrenome: ',sobrenome)
+print('Idade: ', idade)
+print('Raça: ', raca)
+print('Classe: ',classe)
+print('Forte: ',forte)
