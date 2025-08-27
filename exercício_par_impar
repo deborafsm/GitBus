@@ -1,0 +1,9 @@
+numero = input("digite um numero: ")
+num_int = int(numero)
+num_par = num_int % 2 == 0
+
+
+if num_par:
+	print ("numero par")
+else:
+	print("numero impar")
