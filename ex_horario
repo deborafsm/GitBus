@@ -1,0 +1,16 @@
+#0 11
+#12 17
+#18 23
+
+horario = input("digite um horario")
+format_horario= int(horario)
+bom_dia = 0 <= format_horario < 11
+boa_tarde = 12 <= format_horario < 17
+boa_noite = 18 <= format_horario < 23
+
+if bom_dia:
+	print("bom dia!")
+if boa_tarde:
+	print("boa tarde")
+if boa_noite:
+	print("boa noite")
