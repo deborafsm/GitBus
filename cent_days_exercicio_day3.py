@@ -13,3 +13,10 @@ if int(idade) > 12 and int(idade) < 18:
 	print("o ingresso 🎫 custará R$7,00")
 else:
 	print("O ingresso 🎫 custará R$12.00")
+	
+photo = input("você quer tirar fotos ? sim ou não ")
+
+if "sim":
+	print("para tirar foto é")
+else:
+	print("ok")
