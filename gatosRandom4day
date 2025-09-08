@@ -1,0 +1,4 @@
+import random
+gatos = ["curujitas","pururuca","barata","drowzinho","billy","jojo","botoca","galadriel","tigrinho","radagasth","dobby"]
+
+print("O gato escolhido foi: "+random.choice(gatos))
