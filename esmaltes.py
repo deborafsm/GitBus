@@ -42,11 +42,18 @@ def escolha(dicionario, tipo):
 		return None
 
 
+def main():
+	while esmalte and semana:
+		mostrar_listas(cores, "Esmaltes")
+		escolhe_esmalte = escolha(esmalte, "esmalte")
+		if escolhe_esmalte is None:
+			continue
+		mostrar_listas(horario, "Semana")
+		escolhe_semana = escolha(semana, "Semanan")
+			
 
 
 
 
-
-mostrar_listas(cores, "Esmaltes")
 mostrar_listas(semana, "Semana")
 		
