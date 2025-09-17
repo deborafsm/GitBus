@@ -1,4 +1,4 @@
-cursos = []
+grade = []
 
  
 opcao_cursos = {
@@ -36,10 +36,26 @@ def escolha(dicionario, tipo):
 		print("entrada inválida")
 		return None
 		
+		
+def main():
+	while opcao_cursos and opcao_horario:
+		mostrar_opcoes(opcao_cursos,"Cursos disponíveis.")
+		curso_escolhido = escolha(opcao_cursos,"cursos")
+		if curso_escolhido is None:
+			continue
 
+		mostrar_opcoes(opcao_horario,"Horários disponíveis.")
+		horario_escolhido = escolha(opcao_horario,"horário")
+		
+		#add a grade e remove as opcoes da lista.
 
-mostrar_opcoes(opcao_cursos,"Cursos")
-escolha(opcao_cursos,"cursos")
-
-mostrar_opcoes(opcao_horario,"Cursos")
-escolha(opcao_horario,"cursos")
+		grade.append((opcao_cursos[curso_escolhido], opcao_horario[horario_escolhido]))
+		del opcao_cursos[curso_escolhido]
+		del opcao_horario[horario_escolhido]
+		print("Curso e horário adicionados com sucesso!")
+		
+		print("\nGrade final:")
+		for i, (curso, horario) in enumerate(grade, 1):
+			print(f"{i}. {curso} - {horario}")
+			
+main()
