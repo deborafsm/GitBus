@@ -20,3 +20,33 @@ semana ={
 	4:"4ª semana",
 	5:"5ª semana"
 }
+
+#mostrar os esmaltes e os dias da semana 
+def mostrar_listas(dicionario, titulo):
+	print(f"\n,{titulo}")
+	for chave, valor in dicionario.items():
+		print(f"{chave} - {valor}")
+
+
+#pega a escolha do usuario
+def escolha(dicionario, tipo):
+	try:
+		return int(input(f"Escolha {tipo}"))
+		if escolha in dicionario:
+			return escolha
+		else:
+			print("Opção inválida")
+			return None
+	except ValueError:
+		print("Entrada inválida")
+		return None
+
+
+
+
+
+
+
+mostrar_listas(cores, "Esmaltes")
+mostrar_listas(semana, "Semana")
+		
