@@ -43,14 +43,19 @@ def escolha(dicionario, tipo):
 
 
 def main():
-	while esmalte and semana:
+	while cores and semana:
 		mostrar_listas(cores, "Esmaltes")
 		escolhe_esmalte = escolha(esmalte, "esmalte")
 		if escolhe_esmalte is None:
 			continue
 		mostrar_listas(horario, "Semana")
-		escolhe_semana = escolha(semana, "Semanan")
+		escolhe_semana = escolha(semana, "Semana")
 			
+
+			semana_cores.append(cores(escolhe_esmalte], semana(escolhe_semana)))
+		
+		del cores[escolhe_esmalte]
+		del semana[escolhe_semana]
 
 
 
