@@ -16,6 +16,20 @@ def mostra_menu():
 	for numero, descricao in menu.items():
 		print(f"{numero} - {descricao}")
 
+def escolher_pedido():
+	try:
+		escolha = int(input(f"Escolha um hambúrguer"))
+		if escolha in menu:
+			return escolha
+		else:
+			print("Opção inválida.")
+			return None
+	except ValueError:
+		print(f"Tem que ser un número. {ValueError}")
+
+
+
 
 
 mostra_menu()
+escolher_pedido()
