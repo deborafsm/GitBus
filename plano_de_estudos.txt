@@ -1,0 +1,37 @@
+Etapas do Exercício
+
+1. Criar o Menu
+Representar o menu usando um dicionário.
+Cada item deve ter um número, nome e preço.
+Exibir o menu usando for e print.
+Habilidade foco: Dicionários + for + formatação de texto
+
+2. Função para Escolher Item
+Criar uma função que recebe a escolha do cliente.
+Validar se a escolha existe no menu.
+Retornar o item escolhido.
+Habilidade foco: Funções + tratamento de dados + input
+
+3. Adicionar Item ao Pedido
+Criar uma lista chamada pedido.
+Adicionar o item escolhido à lista.
+Mostrar os itens já adicionados.
+Habilidade foco: Listas + append + enumerate
+
+4. Calcular Valor Total
+Criar uma função que percorre a lista de pedidos.
+Somar os preços dos itens.
+Mostrar o valor total formatado.
+Habilidade foco: for + soma de valores + formatação com :.2f
+
+5. Organizar com main()
+Criar uma função principal que chama todas as outras.
+Controlar o fluxo do programa (mostrar menu, escolher item, repetir).
+Permitir que o cliente finalize o pedido ou continue comprando.
+Habilidade foco: Estrutura de programa + controle de fluxo + boas práticas
+
+Desafio Extra
+Criar uma função que mostra um resumo final do pedido.
+Adicionar tratamento de erros para entradas inválidas.
+Permitir que o cliente remova um item do pedido.
+
