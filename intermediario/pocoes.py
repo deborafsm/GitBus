@@ -10,19 +10,15 @@ Remur - Deve esta tão caro assim por causa da amerallda ...
 Elgar - é amerallda é sempre mais caro, e os anoes sempre aumentam o preco.
 '''
 
-prateleira = []
+bolsa = []
 
-pocoes ={
-	1:"Amerallda",
-	2:"Salgueiro",
-	3:"Ametista"
-}
-preco ={
-	1:"33 ouros 20 pratas",
-	2:"20 ouro e 80 pratas ",
-	3:"25 ouro 40 pratas"
-}
+pocoes = {
+	1: {"nome":"Amerallda","preco":50.20}
+	2: {"nome":"Salgueiro","preco":20.30}
+	3: {"nome":"Ametista", "preco":30.40}
 
 
 
-pedido
+pedido = int(input("Oque vai ser hoje amigo ?"))
+
+
