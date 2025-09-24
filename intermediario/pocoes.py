@@ -24,6 +24,6 @@ pocoes = {
 def mostra_menu():
 	print("Menu")
 	for prateleira, item in pocoes.items():
-		print(f"{prateleira}")
+		print(f"{prateleira} # {item['nome']}")
 
 mostra_menu()
