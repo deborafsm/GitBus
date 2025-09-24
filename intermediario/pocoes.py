@@ -18,7 +18,7 @@ pocoes = {
 	3: {"nome":"Ametista", "preco":30.40}
 
 
-
 pedido = int(input("Oque vai ser hoje amigo ?"))
 
 
+def 
