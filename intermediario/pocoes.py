@@ -24,6 +24,21 @@ pocoes = {
 def mostra_menu():
 	print("Menu")
 	for prateleira, item in pocoes.items():
-		print(f"{prateleira} # {item['nome']}")
+		print(f"{prateleira} - {item['nome']} - {item['preco']}")
+		
+		
+#escolher pocao
+def escolher_pocao():
+	try:
+		escolha = int(input("Oque será hoje ?"))
+		if escolha in pocoes:
+			return menu[escolha]
+		else:
+			print("Opção inválida.")
+			return None
+	except ValueError:
+			print("Entrada inválida. Digite o número da prateleira.")
+			return None
 
 mostra_menu()
+escolher_pocao()
